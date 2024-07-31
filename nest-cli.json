@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/marketplace/src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true,
+    "tsConfigPath": "apps/marketplace/tsconfig.app.json"
+  },
+  "monorepo": true,
+  "root": "apps/marketplace",
+  "projects": {
+    "marketplace": {
+      "type": "application",
+      "root": "apps/marketplace",
+      "entryFile": "main",
+      "sourceRoot": "apps/marketplace/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/marketplace/tsconfig.app.json"
+      }
+    }
+  }
+}
